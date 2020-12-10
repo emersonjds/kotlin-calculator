@@ -95,8 +95,6 @@ class MainActivity : AppCompatActivity() {
         tvMain = findViewById(R.id.tvmain)
         tvSec = findViewById(R.id.tvsec)
 
-//       btOne.setOnClickListener(View.OnClickListener { tvMain.text = tvMain.text.toString() + "1" })
-
         btOne.setOnClickListener(View.OnClickListener {
             val value: String = tvMain.text.toString()
             tvMain.text = value + btOne.text.toString()
