@@ -292,9 +292,9 @@ private fun eval(str: String): Double {
         var pos = -1
         var ch = 0
         fun nextChar(){
-            ch = if (++pos < str.length) {
-                str.indexOf(pos)
-            } else -1
+            ch = if (++pos < str.length) str.charAt(pos) else {
+                -1
+            }
         }
 
         fun eat(charToEat: Int): Boolean {
